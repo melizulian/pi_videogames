@@ -1,0 +1,86 @@
+.container {
+    
+    width: 100%; /* Ajusta este valor según tus necesidades */
+    margin: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    gap: 20px; 
+    color: white;
+    overflow-x: hidden;
+  } 
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Añade esta línea para centrar los elementos del formulario */
+    gap: 10px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn{
+    align-self: center; 
+    background:linear-gradient(to bottom, #a611c0 5%, #e184f3 100%);
+    background-color:#a611c0;
+    border-radius:18px;
+    display:inline-block;
+    padding:7px 25px;
+    margin: 5px;
+    font-family:Courier New;
+    font-size:17px;
+    font-weight:bold;
+    color:#ffffff;
+    text-decoration:none;
+    background:linear-gradient(to bottom, #a611c0 5%, #e184f3 100%);
+    border:1px solid #c223de;
+} 
+
+  .btn:hover {
+	background:linear-gradient(to bottom, #e184f3 5%, #c123de 100%);
+}
+  .btn:active {
+	position:relative;
+	top:1px;
+}
+
+  .error {
+    color: red;
+  }
+
+  .input {
+    font-family: Courier New;
+    font-size: 17px;
+    color: #0507A2;
+    border: 1px solid #0507A2;
+    border-radius: 15px;
+    padding: 5px 23px;
+    background: #ffffff;
+    box-shadow: inset -2px 2px 2px 0px #0609bf;
+    max-width: calc(100% - 46px);
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #9b14b3;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Añade esta línea para que todos los inputs tengan el mismo ancho */
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Añade esta línea */
+}

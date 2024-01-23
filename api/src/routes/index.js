@@ -4,7 +4,7 @@ const { Router } = require('express');
 const getGenres = require('../controllers/getGenres')
 const getVideogames = require('../controllers/getVideogames')
 const getVideogameById = require('../controllers/getVideogameById')
-const postVideogame = require('../controllers/postVideogame')
+const postVideogame = require('../controllers/postVideogame');
 const getVideogameByName = require('../controllers/getVideogameByName')
 
 const router = Router();
@@ -13,9 +13,9 @@ const router = Router();
 // Ejemplo: router.use('/auth', authRouter);
 
 router.get('/genres', getGenres)
+router.get('/videogames/name/:name', getVideogameByName)
 router.get('/videogames', getVideogames)
 router.get('/videogames/:id', getVideogameById)
-router.get('/videogames/name?="..."', getVideogameByName)
 router.post('/videogames', postVideogame)
 
 

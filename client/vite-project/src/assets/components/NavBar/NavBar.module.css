@@ -1,0 +1,44 @@
+.NavBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Cambia 'relative' a 'fixed' */
+    z-index: 1000; /* Cualquier número grande para asegurarte de que esté en la parte superior */
+    width: 100%; /* Asegúrate de que tu navbar tenga un ancho completo */
+    top: 0; /* Asegúrate de que tu navbar esté en la parte superior de la página */
+}
+
+.container{
+    width: 70%; /* Ajustar el ancho del input */
+    border-radius: 15px;
+    height: 25px;
+    padding-left: 10px;
+    font-family:Courier New;
+    margin-right: 10px; /* Agregar margen a la derecha */
+}
+
+.btn{
+    align-self: center; 
+    background:linear-gradient(to bottom, #a611c0 5%, #e184f3 100%);
+    background-color:#a611c0;
+    border-radius:18px;
+    display:inline-block;
+    padding:7px 25px;
+    margin: 5px;
+    font-family:Courier New;
+    font-size:17px;
+    font-weight:bold;
+    color:#ffffff;
+    text-decoration:none;
+    background:linear-gradient(to bottom, #a611c0 5%, #e184f3 100%);
+    border:1px solid #c223de;
+    width: 20%;
+} 
+
+.btn:hover {
+	background:linear-gradient(to bottom, #e184f3 5%, #c123de 100%);
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,48 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #04068a;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+body {
+  overflow-x: hidden; /* Esto oculta el desplazamiento horizontal */
+  max-width: 100%; /* Esto asegura que el contenido no exceda el ancho de la ventana del navegador */
+}
+
+
+.container {
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px; 
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #0507A2;
+  border-radius: 7px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF74EE; 
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF74EE; 
+}

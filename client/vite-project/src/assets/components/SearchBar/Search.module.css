@@ -1,0 +1,64 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.input {
+  flex: 1; /* Distribuir el espacio de manera uniforme */
+  max-width: 380px; /* Ancho máximo del input */
+  border-radius: 15px;
+  height: 25px;
+  padding-left: 10px;
+  font-family: Courier New;
+  margin-right: 10px; /* Agregar margen a la derecha */
+}
+
+.btn,
+.option {
+  align-self: center;
+  border-radius: 18px;
+  display: inline-block;
+  padding: 7px 15px; /* Reducir el padding horizontal */
+  margin: 5px;
+  font-family: Courier New;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center; /* Centrar el texto */
+  width: 180px; /* Ancho fijo para botones y opciones de select */
+}
+
+.btn {
+  background: linear-gradient(to bottom, #a611c0 5%, #e184f3 100%);
+  border: 1px solid #c223de;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #e184f3 5%, #c123de 100%);
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Estilo adicional para el select */
+.option {
+  background: linear-gradient(to bottom, #a611c0 5%, #e184f3 100%);
+  border: 1px solid #c223de;
+  cursor: pointer;
+  white-space: nowrap; /* Evitar el ajuste de texto a varias líneas */
+  overflow: hidden; /* Ocultar el contenido que sobresale */
+  text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto es demasiado largo */
+}
+
+.option > option {
+  color: black; 
+}
+
+.option:hover {
+  background: linear-gradient(to bottom, #e184f3 5%, #c123de 100%);
+}

@@ -1,6 +1,7 @@
 const { Videogame } = require('../db');
 
 const postVideogame = async (req, res) => {
+  console.log(req.body)
   try {
     const { name, description, platforms, image_url, released, rating, genres } = req.body;
 
@@ -21,10 +22,13 @@ const postVideogame = async (req, res) => {
 
     // Asociar los géneros al videojuego
     await newVideogame.addGenres(genres);
+    console.log('Videojuego creado exitosamente:', newVideogame);
 
     return res.status(201).json(newVideogame);
   } catch (error) {
+    console.error('Error al crear el videojuego:', error);
     return res.status(500).json({ error: error.message });
+
   }
 };
 

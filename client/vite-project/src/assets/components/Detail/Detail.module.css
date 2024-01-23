@@ -1,0 +1,92 @@
+.parentContainer {
+    position: relative;
+    width: 80%;
+}
+
+.container {
+    background: linear-gradient(193deg, #0507A2 0%, #FF74EE 100%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 85%;
+    height: 80vh;
+    border-radius: 15px;
+    position: relative;
+    transition: box-shadow 0.3s;
+    margin: 5vh auto;
+    font-family: Courier New;
+    text-align: center;
+    animation: myAnim 10s ease 0s infinite alternate-reverse forwards;
+    overflow: auto;
+    
+}
+
+.parentName {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.parentName .name {
+    font-weight: bolder;
+    color: #c123de;
+    font-size: 30px;
+    font-variant-caps: all-small-caps;
+    margin-right: 30px;
+}
+
+.containerData {
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    height: 200px; /* Ajusta este valor según tus necesidades */
+    overflow: auto;
+    padding: 20px;
+}
+
+.img {
+    width: 60%;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.containerData .description {
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.containerData ul li {
+    height: 20px;
+    overflow: hidden;
+}
+
+.container:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItem {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listItem ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
